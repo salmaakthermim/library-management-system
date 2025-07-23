@@ -113,7 +113,7 @@ const AddBooks = () => {
                 <FormItem>
                   <FormLabel>Genre</FormLabel>
                   <FormControl>
-                    <Input placeholder="Genre" {...field} />
+                    <Input  placeholder="Genre" {...field} />
                   </FormControl>
                 </FormItem>
               )}
@@ -168,7 +168,7 @@ const AddBooks = () => {
               )}
             />
 
-            <Button type="submit">Submit</Button>
+            <Button className="bg-sky-500" type="submit">Submit</Button>
           </form>
         </Form>
       </div>
