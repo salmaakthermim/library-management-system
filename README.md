@@ -2,7 +2,7 @@
 
 LibraTrack is a minimal, user-friendly Library Management System that allows managing books and borrowing activities efficiently. The project emphasizes essential features only, accessible to all users without authentication.
 
-#### 🚀**Live Server:** [Click here to access the LibraTrack](https://library-management-system-client-kappa.vercel.app/)
+#### 🚀**Live Server:** [Click here to access the LibraTrack](https://book-management-snowy-chi.vercel.app/)
 
 ### 📌 Core Features
 
@@ -14,8 +14,8 @@ LibraTrack is a minimal, user-friendly Library Management System that allows man
 
 ```bash
 # Clone the repository
-git clone https://github.com/Obaidullah-ahsan/Library-management-system-client.git
-cd Library-management-system-client
+git clone https://github.com/salmaakthermim/library-management-system
+cd library-management-system
 
 # Install dependencies
 npm install
