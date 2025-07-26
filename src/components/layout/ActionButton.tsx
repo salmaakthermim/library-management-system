@@ -56,35 +56,39 @@ function ActionButton({ book }: ActionButtonProps) {
         <DropdownMenuContent className="w-56" align="end">
           <DropdownMenuLabel>Book Actions</DropdownMenuLabel>
           <DropdownMenuGroup>
-            <DropdownMenuItem>
-              <Link to={`/edit-book/${book._id}`}>
-                <button>Edit Book</button>
+            <DropdownMenuItem asChild>
+              <Link
+                to={`/edit-book/${book?._id}`}
+                className="flex justify-between items-center w-full"
+              >
+                Edit Book
+                <DropdownMenuShortcut>
+                  <Edit />
+                </DropdownMenuShortcut>
               </Link>
+            </DropdownMenuItem>
+
+            <DropdownMenuItem onSelect={() => handleDelete(book?._id)}>
+              Delete Book
               <DropdownMenuShortcut>
-                <Edit></Edit>
+                <Trash />
               </DropdownMenuShortcut>
             </DropdownMenuItem>
-            <DropdownMenuItem>
-              <button onClick={() => handleDelete(book?._id)}>
-                Delete Book
-              </button>
-              <DropdownMenuShortcut>
-                <Trash></Trash>
-              </DropdownMenuShortcut>
-            </DropdownMenuItem>
+
             <DropdownMenuItem
               onSelect={(e) => {
                 e.preventDefault();
                 setOpenBorrowDialog(true);
               }}
             >
-              <button>Borrow Book</button>
+              Borrow Book
               <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
             </DropdownMenuItem>
           </DropdownMenuGroup>
+
         </DropdownMenuContent>
       </DropdownMenu>
-      <BorrowBook open={openBorrowDialog} onOpenChange={setOpenBorrowDialog} book={book}/>
+      <BorrowBook open={openBorrowDialog} onOpenChange={setOpenBorrowDialog} book={book} />
     </>
   );
 }

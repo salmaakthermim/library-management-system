@@ -35,6 +35,7 @@
     "sweetalert2": "^11.22.2",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.11",
+    "vercel": "^44.5.5",
     "zod": "^3.25.76"
   },
   "devDependencies": {

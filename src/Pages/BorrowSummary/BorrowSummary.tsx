@@ -29,7 +29,7 @@ const BorrowSummary = () => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {borrowSummary?.map((borrow, idx: number) => (
+            {borrowSummary?.map((borrow: any, idx: number) => (
               <TableRow>
                 <TableCell className="font-medium">{idx + 1}</TableCell>
                 <TableCell>{borrow?.book[0]?.title}</TableCell>
